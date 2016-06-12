@@ -1,0 +1,35 @@
+{
+    "name": "gamblingtec/oauth2-gamblingtec",
+    "description": "Gamblingtec OAuth 2.0 Client Provider for The PHP League OAuth2-Client",
+    "license": "BSD-3-Clause",
+    "homepage": "https://www.gamblingtec.com",
+    "authors": [
+        {
+            "name": "Michael Gooden",
+            "email": "me@michaelgooden.net"
+        }
+    ],
+    "keywords": [
+        "oauth",
+        "oauth2",
+        "client",
+        "authorization",
+        "authorisation",
+        "gamblingtec"
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "league/oauth2-client": "^1.0"
+	},
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^1.11.4"
+    },
+    "scripts": {
+		"cs-check": "php-cs-fixer --version && php-cs-fixer fix -v --diff --dry-run"
+	},
+    "autoload": {
+        "psr-4": {
+            "Gamblingtec\\OAuth2\\Client\\Provider\\": "src/"
+        }
+	}
+}
