@@ -54,6 +54,11 @@ class Gamblingtec extends AbstractProvider
         return [];
     }
 
+    protected function getScopeSeparator()
+    {
+        return ' ';
+    }
+
     protected function checkResponse(ResponseInterface $response, $data)
     {
         if ($response->getStatusCode() >= 400) {
