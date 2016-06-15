@@ -31,5 +31,10 @@
         "psr-4": {
             "Gamblingtec\\OAuth2\\Client\\Provider\\": "src/"
         }
-	}
+	},
+    "extra": {
+        "branch-alias": {
+            "dev-develop": "0.1.x-dev"
+        }
+    }
 }
