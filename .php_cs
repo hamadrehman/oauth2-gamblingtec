@@ -2,7 +2,7 @@
 $finder = Symfony\CS\Finder\DefaultFinder::create()
     ->in('src');
 $config = Symfony\CS\Config\Config::create();
-$config->level('psr2');
+$config->level(Symfony\CS\FixerInterface::PSR2_LEVEL);
 $config->fixers(
     array(
         'braces',
